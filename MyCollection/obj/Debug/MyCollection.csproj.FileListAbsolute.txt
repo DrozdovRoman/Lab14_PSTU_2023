@@ -1,0 +1,6 @@
+/Users/romandr/Documents/studies/course_2/OOP Lab C#/Lab13_PSTU_2023/MyCollection/bin/Debug/MyCollection.dll
+/Users/romandr/Documents/studies/course_2/OOP Lab C#/Lab13_PSTU_2023/MyCollection/bin/Debug/MyCollection.pdb
+/Users/romandr/Documents/studies/course_2/OOP Lab C#/Lab13_PSTU_2023/MyCollection/obj/Debug/MyCollection.csprojAssemblyReference.cache
+/Users/romandr/Documents/studies/course_2/OOP Lab C#/Lab13_PSTU_2023/MyCollection/obj/Debug/MyCollection.csproj.CoreCompileInputs.cache
+/Users/romandr/Documents/studies/course_2/OOP Lab C#/Lab13_PSTU_2023/MyCollection/obj/Debug/MyCollection.dll
+/Users/romandr/Documents/studies/course_2/OOP Lab C#/Lab13_PSTU_2023/MyCollection/obj/Debug/MyCollection.pdb
