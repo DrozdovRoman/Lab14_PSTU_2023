@@ -1,0 +1,12 @@
+/Users/romandr/Documents/studies/course_2/OOP Lab C#/lab_10/MyLib/bin/Debug/net5.0/MyLib.deps.json
+/Users/romandr/Documents/studies/course_2/OOP Lab C#/lab_10/MyLib/bin/Debug/net5.0/MyLib.dll
+/Users/romandr/Documents/studies/course_2/OOP Lab C#/lab_10/MyLib/bin/Debug/net5.0/ref/MyLib.dll
+/Users/romandr/Documents/studies/course_2/OOP Lab C#/lab_10/MyLib/bin/Debug/net5.0/MyLib.pdb
+/Users/romandr/Documents/studies/course_2/OOP Lab C#/lab_10/MyLib/obj/Debug/net5.0/MyLib.csproj.AssemblyReference.cache
+/Users/romandr/Documents/studies/course_2/OOP Lab C#/lab_10/MyLib/obj/Debug/net5.0/MyLib.GeneratedMSBuildEditorConfig.editorconfig
+/Users/romandr/Documents/studies/course_2/OOP Lab C#/lab_10/MyLib/obj/Debug/net5.0/MyLib.AssemblyInfoInputs.cache
+/Users/romandr/Documents/studies/course_2/OOP Lab C#/lab_10/MyLib/obj/Debug/net5.0/MyLib.AssemblyInfo.cs
+/Users/romandr/Documents/studies/course_2/OOP Lab C#/lab_10/MyLib/obj/Debug/net5.0/MyLib.csproj.CoreCompileInputs.cache
+/Users/romandr/Documents/studies/course_2/OOP Lab C#/lab_10/MyLib/obj/Debug/net5.0/MyLib.dll
+/Users/romandr/Documents/studies/course_2/OOP Lab C#/lab_10/MyLib/obj/Debug/net5.0/ref/MyLib.dll
+/Users/romandr/Documents/studies/course_2/OOP Lab C#/lab_10/MyLib/obj/Debug/net5.0/MyLib.pdb
