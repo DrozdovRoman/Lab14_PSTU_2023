@@ -7,25 +7,26 @@ namespace Lab14_PSTU_2023
 {
     class Program
     {
-        static Dictionary<string, Manufacture> createCollectionDictionary(int countManufacture)
+        static Dictionary<Manufacture, Workshop> createCollectionDictionary(int countManufacture)
         {
-            Dictionary<string, Manufacture> branch = new Dictionary<string, Manufacture>();
+            Dictionary<Manufacture, Workshop> branch = new Dictionary<Manufacture, Workshop>();
             int i = 0;
             while (i < countManufacture)
             {
-                Manufacture s = new Manufacture("r");
-                if (!branch.ContainsKey(s.ToString()))
+                Workshop s = new Workshop("r");
+                Manufacture x = s;
+                if (!branch.ContainsKey(x))
                 {
-                    branch.Add(s.ToString(), s);
+                    branch.Add(x, s);
                     i++;
                 }
             }
             return branch;
         }
 
-        static Stack<Dictionary<string, Manufacture>> createCollectionStack(int countBranch,int countManufacture)
+        static Stack<Dictionary<Manufacture, Workshop>> createCollectionStack(int countBranch,int countManufacture)
         {
-            Stack<Dictionary<string, Manufacture>> corporation = new();
+            Stack<Dictionary<Manufacture, Workshop>> corporation = new();
             for (int i = 0; i < countBranch; i++)
             {
                 corporation.Push(createCollectionDictionary(countManufacture));
@@ -33,7 +34,7 @@ namespace Lab14_PSTU_2023
             return corporation;
         }
 
-        static void PrintCollection(Stack<Dictionary<string, Manufacture>> corpotation)
+        static void PrintCollection(Stack<Dictionary<Manufacture, Workshop>> corpotation)
         {
             foreach (var branch in corpotation)
             {
@@ -45,7 +46,7 @@ namespace Lab14_PSTU_2023
             }
         }
 
-        static void QuerySelection(Stack<Dictionary<string, Manufacture>> corporation)
+        static void QuerySelection(Stack<Dictionary<Manufacture, Workshop>> corporation)
         {
             Console.WriteLine("Запрос № 1 на выборку данных");
             Console.WriteLine("Список компаний с количеством работников больше 5: \n");
@@ -64,7 +65,7 @@ namespace Lab14_PSTU_2023
                 Console.WriteLine(s.Key);
         }
 
-        static void QueryCount(Stack<Dictionary<string, Manufacture>> corporation)
+        static void QueryCount(Stack<Dictionary<Manufacture, Workshop>> corporation)
         {
             Console.WriteLine("\n\nЗапрос № 2 счетчик");
             Console.WriteLine("Количество помещений суммарной площадью больше 300");
@@ -81,7 +82,7 @@ namespace Lab14_PSTU_2023
             Console.WriteLine(resExtention);
         }
         
-        static void QueryUnion(Stack<Dictionary<string, Manufacture>> corporation)
+        static void QueryUnion(Stack<Dictionary<Manufacture, Workshop>> corporation)
         {
             Console.WriteLine("\n\nЗапрос № 3 использование операций над множествами");
             Console.WriteLine("Объединение двух филиалов: \n");
@@ -104,7 +105,7 @@ namespace Lab14_PSTU_2023
                 Console.WriteLine(element);
         }
         
-        static void QueryAgregate(Stack<Dictionary<string, Manufacture>> corporation)
+        static void QueryAgregate(Stack<Dictionary<Manufacture, Workshop>> corporation)
         {
             Console.WriteLine(" \n\nЗапрос № 4 агрегирование данных");
             Console.WriteLine("Средняя площадь предприятий:");
@@ -118,7 +119,7 @@ namespace Lab14_PSTU_2023
             Console.WriteLine($"Extention: {Math.Round(resExtention, 2)}");
         }
         
-        static void QueryGroupBy(Stack<Dictionary<string, Manufacture>> corporation)
+        static void QueryGroupBy(Stack<Dictionary<Manufacture, Workshop>> corporation)
         {
             Console.WriteLine(" \n\nЗапрос № 5 группирование данных");
             Console.WriteLine("Группировка по сферам предприятий:");
@@ -153,7 +154,7 @@ namespace Lab14_PSTU_2023
         {
             int sizeCorparation = 3;
             int sizeManufacture = 5;
-            Stack<Dictionary<string, Manufacture>> collection = createCollectionStack(3, 5);
+            Stack<Dictionary<Manufacture, Workshop>> collection = createCollectionStack(3, 5);
             
             PrintCollection(collection);
             Console.Read();
